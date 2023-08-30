@@ -1,0 +1,42 @@
+{
+  "name": "𝗡𝗲𝗶𝗺𝗮𝗻 𝗦𝗲𝘀𝘀𝗶𝗼𝗻𝗕𝗼𝘁",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://te.legra.ph/file/a136daf8b5b13f6d85519.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather",
+            "required": true
+        },  
+        "MUST_JOIN": {
+            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "required": true      
+        }, 
+        "MONGO_URL": {
+            "description": "mongo db url here",
+            "required": true
+        },
+        "API_ID": {
+            "description": "telegram api id here",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Telegram id of the person who will known as owner of the bot.",
+            "required": true
+        }, 
+        "API_HASH": {
+            "description": "telegram api hash here",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
